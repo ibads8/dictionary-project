@@ -11,7 +11,6 @@ export default function Dictionary(props) {
   let [photos, setPhotos] = useState(null);
 
   function handleDictionaryResponse(response) {
-    //console.log(response.data[0].meanings[0].definitions[0].definition);
     setResults(response.data[0]);
   }
 
@@ -53,7 +52,6 @@ export default function Dictionary(props) {
           <form onSubmit={handleSubmit}>
             <input
               type="search"
-              autoFocus="on"
               defaultValue={props.defaultKeyword}
               onChange={handleKeywordChange}
             />
