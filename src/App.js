@@ -8,7 +8,7 @@ export default function App() {
         <header className="App-header">Dictionary</header>
         <main>
           {" "}
-          <Dictionary />
+          <Dictionary defaultKeyword="ocean" />
         </main>
 
         <footer className="App-footer">
